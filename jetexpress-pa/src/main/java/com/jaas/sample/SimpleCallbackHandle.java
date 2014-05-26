@@ -10,7 +10,6 @@ import javax.security.auth.callback.UnsupportedCallbackException;
 
 public class SimpleCallbackHandle implements CallbackHandler {
 
-	@Override
 	public void handle(Callback[] callbacks) throws IOException,
 			UnsupportedCallbackException {
 		for (Callback callback : callbacks) {

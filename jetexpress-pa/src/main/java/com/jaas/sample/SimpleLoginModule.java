@@ -64,6 +64,7 @@ public class SimpleLoginModule implements LoginModule {
 				System.out.println("你输入的用户名为:" + userName);
 				System.out.println("你输入的密码为:" + new String(password));
 			}
+			
 
 			if (userName.equals("dibin")
 					&& new String(password).equals("dibin")) {

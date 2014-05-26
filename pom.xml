@@ -39,6 +39,7 @@
     <javax.servlet.jstl.version>1.2</javax.servlet.jstl.version>
     <portal.context.name>jetexpress</portal.context.name>
     <org.apache.jetspeed.server.home>/opt/apache-tomcat-6.0.33/</org.apache.jetspeed.server.home>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <dependencyManagement>
@@ -84,6 +85,7 @@
             <showDeprecation>true</showDeprecation>
             <showWarnings>true</showWarnings>
             <optimize>false</optimize>
+            <encoding>UTF-8</encoding>
           </configuration>
         </plugin>
         <plugin>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<project basedir=".">
+
+
+
+	<!-- ================================= 
+          target: deploy decorations              
+         ================================= -->
+	<target name="deploy decorations" description="copy jetexpress derectores file to server">
+		<copy todir="D:/apache-tomcat-6.0.37/webapps/jetexpress/decorations" >
+			<fileset dir="${basedir}/jetexpress-portal/src/main/webapp/decorations/">
+				<include name="**" />
+			</fileset>
+		</copy>
+	</target>
+
+	<!-- ================================= 
+          target: build              
+         ================================= -->
+	<target name="build" description="build">
+
+	</target>
+
+
+</project>
