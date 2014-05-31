@@ -73,7 +73,8 @@ var JETUI_YUI = {
 
 
 <link rel="stylesheet" href="$request.contextPath$layoutDecoration.basePath/css/font-awesome.css" type="text/css" />		
-<link rel="stylesheet" href="$request.contextPath$layoutDecoration.basePath/css/bootstrap.min.css" type="text/css" />	
+<link rel="stylesheet" href="$request.contextPath$layoutDecoration.basePath/css/bootstrap.min.css" type="text/css" />
+<link rel="stylesheet" href="$request.contextPath$layoutDecoration.basePath/css/signin.css" type="text/css" />		
 
 <link rel="stylesheet" href="$request.contextPath/decorations/portlet/wedding/css/custom.css" type="text/css" />
 	
