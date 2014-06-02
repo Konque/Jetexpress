@@ -1,0 +1,45 @@
+.shortcuts {
+	text-align: center;
+}
+
+.shortcuts .shortcut {
+	background: linear-gradient(to bottom, #FFFFFF 0%, #EEEEEE 100%)
+		repeat-x scroll 0 0 #F3F3F3;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0 5px 1em;
+	padding: 15px 0;
+	text-decoration: none;
+	vertical-align: top;
+	width: 110px;
+}
+
+.shortcuts .shortcut .shortcut-icon {
+	color: #555555;
+	font-size: 32px;
+	margin-bottom: 0.35em;
+	margin-top: 0.25em;
+	width: 100%;
+}
+
+.shortcuts .shortcut:hover {
+	background: linear-gradient(to bottom, #FAFAFA 0%, #E1E1E1 100%)
+		repeat-x scroll 0 0 #E8E8E8;
+}
+
+.shortcuts .shortcut:active {
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;
+}
+
+.shortcuts .shortcut:hover .shortcut-icon {
+	color: #666666;
+}
+
+.shortcuts .shortcut-label {
+	color: #666666;
+	display: block;
+	font-weight: 400;
+	margin-top: 0.75em;
+}

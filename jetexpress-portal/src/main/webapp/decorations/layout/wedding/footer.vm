@@ -28,7 +28,7 @@ limitations under the License.
 #if ($jetspeed.isAjaxCustomizationEnabled())
 
 <script src="#BaseHref()jetui/engine/portal.js"></script>
-
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="$request.contextPath$layoutDecoration.basePath/js/bootstrap.js"></script>
 
 <div id="jsPortletTemplate" class="portal-layout-cell yui-dd-draggable yui-dd-drop" style="display: none">

@@ -12,7 +12,7 @@
 	border-top-right-radius: 4px;
 	padding: 1px 15px;
 	position: relative;
-	height:42px;
+	height: 42px;
 }
 
 .jetspeed  .PTitle:before,.jetspeed  .PTitle:after {
@@ -24,7 +24,7 @@
 	clear: both;
 }
 
-.jetspeed .PTitleActive{
+.jetspeed .PTitleActive {
 	background-image: linear-gradient(to bottom, #0000FF 0%, #049ff1 100%);
 	background-repeat: repeat-x;
 	border: 1px solid #0000FF;
@@ -32,51 +32,102 @@
 	border-top-right-radius: 4px;
 	padding: 1px 15px;
 	position: relative;
-	height:42px;
+	height: 42px;
 }
 
-.jetspeed .PTitle h1, .jetspeed .PTitle h2, .jetspeed .PTitle h3, .jetspeed .PTitle h4, .jetspeed .PTitle h5, .jetspeed .PTitle h6 {
-    vertical-align: middle;
+.jetspeed .PTitle h1,.jetspeed .PTitle h2,.jetspeed .PTitle h3,.jetspeed .PTitle h4,.jetspeed .PTitle h5,.jetspeed .PTitle h6
+	{
+	vertical-align: middle;
 }
 
-.jetspeed .PTitle h1 i, .jetspeed .PTitle h2 i, .jetspeed .PTitle h3 i, .jetspeed .PTitle h4 i, .jetspeed .PTitle h5 i, .jetspeed .PTitle h6 i {
-	display:inline;
-    color: #777777;
-    display: inline-block;
-    font-size: 16px;
-    margin-right: 10px;
-    margin-top: -3px;
-    vertical-align: middle;
+.jetspeed .PTitle h1 i,.jetspeed .PTitle h2 i,.jetspeed .PTitle h3 i,.jetspeed .PTitle h4 i,.jetspeed .PTitle h5 i,.jetspeed .PTitle h6 i
+	{
+	display: inline;
+	color: #777777;
+	display: inline-block;
+	font-size: 16px;
+	margin-right: 10px;
+	margin-top: -3px;
+	vertical-align: middle;
 }
-
 
 .jetspeed .PTitleContent {
-    clear: left;
-    display: inline;
-    float: left;
-    font-size: 8pt;
-    font-weight: bold;
-    padding: 4px;
-    white-space: normal;
+	clear: left;
+	display: inline;
+	float: left;
+	font-size: 8pt;
+	font-weight: bold;
+	padding: 4px;
+	white-space: normal;
 }
 
 .jetspeed .PContentBorder {
-    border-radius: 0px 0px 4px 4px;
-    border:0px;
+	border-radius: 0px 0px 4px 4px;
+	border: 0px;
 }
-
 
 .jetspeed .PContent {
-    background: none repeat scroll 0 0 padding-box #FFFFFF;
-    border: 1px solid #D5D5D5;
-    border-radius: 0px 0px 4px 4px;
-    padding: 22px 15px 15px;
+	background: none repeat scroll 0 0 padding-box #FFFFFF;
+	border: 1px solid #D5D5D5;
+	border-radius: 0px 0px 4px 4px;
+	padding: 22px 15px 15px;
 }
 
-.jetspeed .PContent:before, .portlet .PContent:after {
-    content: " ";
-    display: table;
+.jetspeed .PContent:before,.portlet .PContent:after {
+	content: " ";
+	display: table;
 }
+
 .jetspeed .PContent:after {
-    clear: both;
+	clear: both;
+}
+
+.shortcuts {
+	text-align: center;
+}
+
+.shortcuts .shortcut {
+	background: linear-gradient(to bottom, #FFFFFF 0%, #EEEEEE 100%)
+		repeat-x scroll 0 0 #F3F3F3;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin: 0 5px 1em;
+	padding: 15px 0;
+	text-decoration: none;
+	vertical-align: top;
+	width: 110px;
+}
+
+.shortcuts .shortcut .shortcut-icon {
+	color: #555555;
+	font-size: 32px;
+	margin-bottom: 0.35em;
+	margin-top: 0.25em;
+	width: 100%;
+}
+
+.shortcuts .shortcut:hover {
+	background: linear-gradient(to bottom, #FAFAFA 0%, #E1E1E1 100%)
+		repeat-x scroll 0 0 #E8E8E8;
+}
+
+.shortcuts .shortcut:active {
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.125) inset;
+}
+
+.shortcuts .shortcut:hover .shortcut-icon {
+	color: #666666;
+}
+
+.shortcuts .shortcut-label {
+	color: #666666;
+	display: block;
+	font-weight: 400;
+	margin-top: 0.75em;
+}
+
+.shortcuts a:link, .shortcuts a:visited, .shortcuts a:active, .shortcuts a:hover {
+	text-decoration:none;
 }
