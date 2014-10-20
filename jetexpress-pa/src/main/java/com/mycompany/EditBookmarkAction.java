@@ -13,6 +13,12 @@ import com.opensymphony.xwork2.Preparable;
 public class EditBookmarkAction extends DefaultActionSupport implements
 		PortletPreferencesAware, Preparable, ParameterAware {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5166165361933973935L;
+	
+	
 	private String oldName;
 	private String name;
 	private String url;
