@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="AntConfiguration">
-    <buildFile url="file://$PROJECT_DIR$/mybuild.xml" />
-    <buildFile url="file://C:/Users/guanggui.wang/git/J2-Admin/build.xml" />
-  </component>
-</project>
-
