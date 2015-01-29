@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+
+<project default="default" basedir="." name="Jetexpress">
+
+    <property name="server.home" value="D:\apache-tomcat-6.0.37"/>
+    <property name="mysql.home" value="  D:\Program Files\mysql-5.6.11-win32"/>
+
+    <property name="src-webapp" value="${basedir}\src\main\webapp"/>
+    <property name="src-resource" value="${basedir}\src\main\resources"/>
+
+    <property name="jetspeed.portal.project" value="${basedir}/jetexpress-portal"/>
+    <property name="jetspeed.pa.project" value="${basedir}/jetexpress-pa"/>
+
+    <property name="jetspeed.portal.app" value="jetexpress"/>
+    <property name="jetspeed.pa.app" value="jetexpress-pa"/>
+
+    <target name="default">
+        <antcall target="deploy module">
+            <param name="Server App" value="${jetspeed.pa.app}"/>
+            <param name="module" value="${jetspeed.pa.project}"/>
+        </antcall>
+
+        <antcall target="deploy module">
+            <param name="Server App" value="${jetspeed.portal.app}"/>
+            <param name="module" value="${jetspeed.portal.project}"/>
+        </antcall>
+    </target>
+
+    <target name="deploy module">
+        <antcall target="deploy java">
+            <param name="Server App" value="${Server App}"/>
+            <param name="module" value="${module}"/>
+        </antcall>
+
+        <antcall target="deploy resource">
+            <param name="Server App" value="${Server App}"/>
+            <param name="module" value="${module}"/>
+        </antcall>
+
+        <antcall target="deploy webapp">
+            <param name="Server App" value="${Server App}"/>
+            <param name="module" value="${module}"/>
+        </antcall>
+    </target>
+
+
+    <target name="deploy java">
+        <copy todir="${server.home}/webapps/${Server App}/WEB-INF/classes">
+            <fileset dir="${module}/target/classes">
+                <include name="**"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="deploy resource">
+        <copy todir="${server.home}/webapps/${Server App}/WEB-INF/classes" includeemptydirs="true">
+            <fileset dir="${module}/src/main/resources">
+                <include name="**"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="deploy webapp">
+        <echo>${server.home}/${Server App}</echo>
+        <echo>${module}/src/main/webapp</echo>
+        <copy todir="${server.home}/webapps/${Server App}" includeemptydirs="false">
+            <fileset dir="${module}/src/main/webapp">
+                <include name="**"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="start_mysql">
+        <echo>start mysql</echo>
+        <exec executable="cmd" dir="${mysql.home}/bin" failonerror="false"
+              append="true">
+            <arg value="/c mysqld.exe --console"/>
+        </exec>
+    </target>
+
+    <target name="start_tomcat">
+        <echo>start tomcat</echo>
+        <exec executable="cmd" dir="${server.home}/bin" failonerror="false"
+              append="true">
+            <env key="CATALINA_HOME" path="${server.home}"/>
+            <arg value="/c startup.bat"/>
+        </exec>
+    </target>
+
+    <target name="stop_tomcat">
+        <echo>stop tomcat</echo>
+        <exec executable="cmd" dir="${server.home}/bin" failonerror="false"
+              append="true">
+            <env key="CATALINA_HOME" path="${server.home}"/>
+            <arg value="/c shutdown.bat"/>
+        </exec>
+    </target>
+
+    <target name="start_jetspeed">
+        <echo>start jetspeed</echo>
+        <exec executable="cmd" dir="${basedir}" failonerror="false"
+              append="true">
+            <arg value="/c jetspeed.bat"/>
+        </exec>
+    </target>
+
+
+</project>

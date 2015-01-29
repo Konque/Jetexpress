@@ -65,7 +65,7 @@
           <org.apache.jetspeed.production.database.driver>com.mysql.jdbc.Driver</org.apache.jetspeed.production.database.driver>
           <org.apache.jetspeed.production.database.url><![CDATA[jdbc:mysql://127.0.0.1/jetspeed?useServerPrepStmts=false&amp;jdbcCompliantTruncation=false]]></org.apache.jetspeed.production.database.url>
           <org.apache.jetspeed.production.database.user>root</org.apache.jetspeed.production.database.user>
-          <org.apache.jetspeed.production.database.password></org.apache.jetspeed.production.database.password>
+          <org.apache.jetspeed.production.database.password>root</org.apache.jetspeed.production.database.password>
         
          <!--
         <org.apache.jetspeed.production.jdbc.driver.groupId>org.apache.derby</org.apache.jetspeed.production.jdbc.driver.groupId>

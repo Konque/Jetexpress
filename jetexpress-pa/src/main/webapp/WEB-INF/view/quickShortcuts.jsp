@@ -7,7 +7,7 @@
 <portlet:renderURL var="max" windowState='maximized' />
 <portlet:renderURL var="normal" windowState='normal' />
 
-
+<form method="POST"  action="<portlet:actionURL/>" class="form-horizontal col-md-24">
 <div class="shortcuts">
 
 	<a href="javascript:;" class="shortcut">
@@ -50,3 +50,6 @@
 		<span class="shortcut-label">Tags</span>
 	</a>				
 </div>
+
+    <input type="submit" value='<fmt:message key="chgpwd.label.save"/>'  class="btn btn-primary"/>
+</form>

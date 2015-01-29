@@ -1,0 +1,3 @@
+1387802326938
+(?:[^/]+/)*?[^/]*?
+WEB-INF/conf/jetspeed\.properties, WEB-INF/min-pages(?:$|/.+), WEB-INF/min-ui-pages(?:$|/.+), WEB-INF/pages(?:$|/.+), WEB-INF/ui-pages(?:$|/.+)

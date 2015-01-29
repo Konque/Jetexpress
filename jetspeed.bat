@@ -1,5 +1,5 @@
 @echo off
-echo "»¶Ó­!"
+echo "Welcome to Jetspeed"
 
 start  "D:\mysql-5.6.11-win32\bin"  mysqld --console
 

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="aa">
+    <serverData>
+      <paths name="aa">
+        <serverdata>
+          <mappings>
+            <mapping deploy="jetexpress-pa" local="$PROJECT_DIR$/jetexpress-pa/src/main/webapp" web="/" />
+            <mapping local="$PROJECT_DIR$/jetexpress-portal" />
+            <mapping local="$PROJECT_DIR$" />
+            <mapping local="C:/Users/guanggui.wang/git/J2-Admin" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
+

@@ -1,9 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="target/classes" path="src/main/java"/>
-	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
-	<classpathentry kind="con" path="org.maven.ide.eclipse.MAVEN2_CLASSPATH_CONTAINER"/>
-	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+  <classpathentry kind="src" path="src/main/resources" excluding="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="var" path="M2_REPO/javax/servlet/jstl/1.2/jstl-1.2.jar" sourcepath="M2_REPO/javax/servlet/jstl/1.2/jstl-1.2-sources.jar"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/portals/bridges/portals-bridges-common/2.0/portals-bridges-common-2.0.jar" sourcepath="M2_REPO/org/apache/portals/bridges/portals-bridges-common/2.0/portals-bridges-common-2.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/D:/Maven%20Repository/org/apache/portals/bridges/portals-bridges-common/2.0/portals-bridges-common-2.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/apache/portals/jetspeed-2/jetspeed-api/2.2.2/jetspeed-api-2.2.2.jar" sourcepath="M2_REPO/org/apache/portals/jetspeed-2/jetspeed-api/2.2.2/jetspeed-api-2.2.2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/D:/Maven%20Repository/org/apache/portals/jetspeed-2/jetspeed-api/2.2.2/jetspeed-api-2.2.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/apache/struts/struts2-portlet-plugin/2.3.16/struts2-portlet-plugin-2.3.16.jar" sourcepath="M2_REPO/org/apache/struts/struts2-portlet-plugin/2.3.16/struts2-portlet-plugin-2.3.16-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-lang3/3.1/commons-lang3-3.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/struts/struts2-core/2.3.16/struts2-core-2.3.16.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/struts/xwork/xwork-core/2.3.16/xwork-core-2.3.16.jar"/>
+  <classpathentry kind="var" path="M2_REPO/ognl/ognl/3.0.6/ognl-3.0.6.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javassist/javassist/3.11.0.GA/javassist-3.11.0.GA.jar"/>
+  <classpathentry kind="var" path="M2_REPO/asm/asm/3.3/asm-3.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/asm/asm-commons/3.3/asm-commons-3.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/asm/asm-tree/3.3/asm-tree-3.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/freemarker/freemarker/2.3.19/freemarker-2.3.19.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-fileupload/commons-fileupload/1.3/commons-fileupload-1.3.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-io/commons-io/2.2/commons-io-2.2.jar"/>
+  <classpathentry kind="lib" path="D:/Program Files/Java/jdk1.6.0_23/lib/tools.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/portals/portlet-api_2.0_spec/1.0/portlet-api_2.0_spec-1.0.jar" sourcepath="M2_REPO/org/apache/portals/portlet-api_2.0_spec/1.0/portlet-api_2.0_spec-1.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/D:/Maven%20Repository/org/apache/portals/portlet-api_2.0_spec/1.0/portlet-api_2.0_spec-1.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/apache/geronimo/specs/geronimo-servlet_2.4_spec/1.1.1/geronimo-servlet_2.4_spec-1.1.1.jar" sourcepath="M2_REPO/org/apache/geronimo/specs/geronimo-servlet_2.4_spec/1.1.1/geronimo-servlet_2.4_spec-1.1.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/D:/Maven%20Repository/org/apache/geronimo/specs/geronimo-servlet_2.4_spec/1.1.1/geronimo-servlet_2.4_spec-1.1.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
 </classpath>
