@@ -74,7 +74,9 @@ var JETUI_YUI = {
 
 <link rel="stylesheet" href="$request.contextPath$layoutDecoration.basePath/css/font-awesome.css" type="text/css" />		
 <link rel="stylesheet" href="$request.contextPath$layoutDecoration.basePath/css/bootstrap.min.css" type="text/css" />
-<link rel="stylesheet" href="$request.contextPath$layoutDecoration.basePath/css/signin.css" type="text/css" />		
+<link rel="stylesheet" href="$request.contextPath$layoutDecoration.basePath/css/signin.css" type="text/css" />
+<link rel="stylesheet" href="$request.contextPath$layoutDecoration.basePath/css/base-admin-3.css" type="text/css" />
+<link rel="stylesheet" href="$request.contextPath$layoutDecoration.basePath/css/base-admin-3-responsive.css" type="text/css" />
 
 <link rel="stylesheet" href="$request.contextPath/decorations/portlet/wedding/css/custom.css" type="text/css" />
 	
@@ -92,16 +94,71 @@ var JETUI_YUI = {
 #end
 <!-- end of header -->
 <div id="layout-${rootFragment.id}" class="#PageBaseCSSClass()" >
-<div class="header">
-<h1 class="logo">Jetspeed 2</h1>
-<div class="menu">
-#if (!$jetspeed.isAjaxCustomizationEnabled())
-#set($pagesStandardMenu = $site.getMenu("pages"))#if(!$pagesStandardMenu.empty)
-#includeTabsNavigation($pagesStandardMenu $LEFT_TO_RIGHT)
-#end
-#end
+<nav role="navigation" class="navbar navbar-inverse">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                <span class="sr-only">Toggle navigation</span>
+                <i class="icon-cog"></i>
+            </button>
+            <a href="./index.html" class="navbar-brand">Jetspeed 2</a>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            #if ($request.getUserPrincipal())
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="javscript:;">
+                        <i class="icon-cog"></i>
+                        Settings
+                        <b class="caret"></b>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="./account.html">Account Settings</a></li>
+                        <li><a href="javascript:;">Privacy Settings</a></li>
+                        <li class="divider"></li>
+                        <li><a href="javascript:;">Help</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="dropdown">
+
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="javscript:;">
+                        <i class="icon-user"></i>
+                         $jetspeed.getUserAttribute("user.name.given","") $jetspeed.getUserAttribute("user.name.family", ${request.userPrincipal.name})
+                        <b class="caret"></b>
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:;">My Profile</a></li>
+                        <li><a href="javascript:;">My Groups</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#BaseHref()login/logout">Log out</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+
+            <form role="search" class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" placeholder="Search" class="form-control input-sm search-query">
+                </div>
+            </form>
+            #end
+        </div>
+    </div>
+</nav>
+
+<div class="subnavbar">
+    <div class="subnavbar-inner">
+    </div>
 </div>
-</div>
+
+
 #if (!$jetspeed.isAjaxCustomizationEnabled())
     <!-- Content Table -->
     <table cellpadding="0" cellspacing="0" border="0" width="100%" id="main">

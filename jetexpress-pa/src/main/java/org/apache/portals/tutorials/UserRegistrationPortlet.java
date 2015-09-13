@@ -139,7 +139,7 @@ public class UserRegistrationPortlet extends GenericPortlet {
     @RenderMode(name = "HELP")
     public void renderHelp(RenderRequest request, RenderResponse response)
             throws PortletException, IOException {
-        getPortletContext().getRequestDispatcher("/WEB-INF/view/tutorials/help.jsp")
+       getPortletContext().getRequestDispatcher("/WEB-INF/view/tutorials/help.jsp")
                 .include(request, response);
     }
 
